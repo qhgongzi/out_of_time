@@ -53,35 +53,6 @@ namespace out_of_time
             state = 0;
         }
 
-        private void Form1_MouseEnter(object sender, EventArgs e)
-        {
-            if (state == 0)
-            {
-                state = 1;
-                int t = this.Top;
-                for (int i = t; i <= 0; i++)
-                {
-                    this.Top = i;
-                    Application.DoEvents();
-                }
-                state = 0;
-            }
-        }
-
-        private void Form1_MouseLeave(object sender, EventArgs e)
-        {
-            if (this.Top <= 0 && state == 0)
-            {
-                state = 1;
-                int t = this.Top;
-                for (int i = t; i > -this.Height + 10; i--)
-                {
-                    this.Top = i;
-                    Application.DoEvents();
-                }
-                state = 0;
-            }
-        }
 
         private void Form_count_down_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -193,10 +164,6 @@ namespace out_of_time
                 Location = mousePos;
             }
 
-        }
-
-        private void label1_MouseDown(object sender, MouseEventArgs e)
-        {
         }
 
         private void btn_suspend_Click(object sender, EventArgs e)
