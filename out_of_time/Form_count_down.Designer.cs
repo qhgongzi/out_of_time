@@ -123,7 +123,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(327, 140);
+            this.ClientSize = new System.Drawing.Size(390, 140);
             this.Controls.Add(this.lb_span_time);
             this.Controls.Add(this.btn_task_done);
             this.Controls.Add(this.btn_suspend);

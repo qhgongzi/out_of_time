@@ -87,15 +87,15 @@ namespace out_of_time
             string timestr = "";
             if (hour > 0)
             {
-                timestr += hour.ToString() + "小时 ";
+                timestr += hour.ToString() + "小时";
             }
 
             if (min > 0)
             {
-                timestr += min.ToString() + "分 ";
+                timestr += min.ToString() + "分";
             }
 
-            timestr += mill.ToString("f1") + "秒 ";
+            timestr += mill.ToString("f1") + "秒";
 
             return timestr;
         }
