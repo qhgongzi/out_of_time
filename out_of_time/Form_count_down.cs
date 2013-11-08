@@ -139,20 +139,24 @@ namespace out_of_time
             //    Capture = false;//释放鼠标，使能够手动操作                
             //    SendMessage(Handle, 0x00A1, 2, 0);//拖动窗体            
             //}  
-            int xOffset;
-            int yOffset;
-
-            if (e.Button == MouseButtons.Left)
+            if (!cbFixed.Checked)
             {
-                xOffset = -e.X;
+                int xOffset;
+                int yOffset;
 
-                yOffset = -e.Y;
+                if (e.Button == MouseButtons.Left)
+                {
+                    xOffset = -e.X;
 
-                _MouseOffset = new Point(xOffset, yOffset);
+                    yOffset = -e.Y;
 
-                _IsMouseDown = true;
+                    _MouseOffset = new Point(xOffset, yOffset);
 
+                    _IsMouseDown = true;
+
+                }
             }
+            
         }
 
         private void Form_count_down_MouseMove(object sender, MouseEventArgs e)

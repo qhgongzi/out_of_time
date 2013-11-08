@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btn_suspend = new System.Windows.Forms.Button();
             this.btn_task_done = new System.Windows.Forms.Button();
+            this.cbFixed = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // timer1
@@ -117,6 +118,19 @@
             this.btn_task_done.UseVisualStyleBackColor = false;
             this.btn_task_done.Click += new System.EventHandler(this.btn_task_done_Click);
             // 
+            // cbFixed
+            // 
+            this.cbFixed.AutoSize = true;
+            this.cbFixed.Checked = true;
+            this.cbFixed.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbFixed.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbFixed.Location = new System.Drawing.Point(127, 109);
+            this.cbFixed.Name = "cbFixed";
+            this.cbFixed.Size = new System.Drawing.Size(65, 19);
+            this.cbFixed.TabIndex = 5;
+            this.cbFixed.Text = "fixed";
+            this.cbFixed.UseVisualStyleBackColor = true;
+            // 
             // Form_count_down
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -124,6 +138,7 @@
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(390, 140);
+            this.Controls.Add(this.cbFixed);
             this.Controls.Add(this.lb_span_time);
             this.Controls.Add(this.btn_task_done);
             this.Controls.Add(this.btn_suspend);
@@ -158,5 +173,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_suspend;
         private System.Windows.Forms.Button btn_task_done;
+        private System.Windows.Forms.CheckBox cbFixed;
     }
 }
