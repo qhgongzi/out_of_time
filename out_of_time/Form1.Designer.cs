@@ -98,7 +98,7 @@
             this.tb_task_min.Name = "tb_task_min";
             this.tb_task_min.Size = new System.Drawing.Size(48, 25);
             this.tb_task_min.TabIndex = 3;
-            this.tb_task_min.Text = "0";
+            this.tb_task_min.Text = "25";
             // 
             // label5
             // 
@@ -115,7 +115,7 @@
             this.tb_task_sec.Name = "tb_task_sec";
             this.tb_task_sec.Size = new System.Drawing.Size(48, 25);
             this.tb_task_sec.TabIndex = 3;
-            this.tb_task_sec.Text = "60";
+            this.tb_task_sec.Text = "0";
             // 
             // btn_start
             // 
